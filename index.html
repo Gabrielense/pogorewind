@@ -187,14 +187,9 @@ footer{position:relative;z-index:1;text-align:center;padding:28px 20px;color:#44
 <div class="container" id="app">
   <div class="loading-msg"><div class="spinner"></div><br>Loading...</div>
 </div>
-<div id="kofi-wrap" style="text-align:center;padding:16px 20px 0"></div>
-<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
-<script type="text/javascript">
-kofiwidget2.init('Support me on Ko-fi','#72a4f2','J3J21VUCOZ');
-kofiwidget2.draw();
-var kofiBtn=document.querySelector('.kofi-button');
-if(kofiBtn){document.getElementById('kofi-wrap').appendChild(kofiBtn);}
-</script>
+<div style="text-align:center;padding:16px 20px 0">
+  <a href="https://ko-fi.com/J3J21VUCOZ" target="_blank"><img height="36" style="border:0px;height:36px;" src="https://storage.ko-fi.com/cdn/kofi6.png?v=6" border="0" alt="Buy Me a Coffee at ko-fi.com"></a>
+</div>
 <footer>Made by <a href="https://www.reddit.com/user/Gabrielense/" style="color:var(--accent3)">Gabrielense</a><br>Last updated March 18th, 2026</footer>
 
 <script>
@@ -1957,8 +1952,6 @@ function setLang(l){
   document.getElementById("tagline").textContent=T("tagline");
   document.getElementById("todayBtn").textContent=T("today");
   document.documentElement.lang=l==="pt"?"pt-BR":"en";
-  var kofiText=document.querySelector('.kofi-button .kofitext');
-  if(kofiText) kofiText.textContent=l==="pt"?"Me apoie no Ko-fi":"Support me on Ko-fi";
   showDate(currentDate.getDate(),currentDate.getMonth()+1);
 }
 
