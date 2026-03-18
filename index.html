@@ -2134,8 +2134,12 @@ document.addEventListener("keydown",function(e){
   if(e.key==="ArrowRight"){changeDay(1);e.preventDefault()}
 });
 
-// Init
-showDate(currentDate.getDate(),currentDate.getMonth()+1);
+// Init — detect browser language
+if((navigator.language||navigator.userLanguage||"").startsWith("pt")){
+  setLang("pt");
+}else{
+  showDate(currentDate.getDate(),currentDate.getMonth()+1);
+}
 </script>
 </body>
 </html>
