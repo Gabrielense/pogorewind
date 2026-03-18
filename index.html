@@ -187,7 +187,15 @@ footer{position:relative;z-index:1;text-align:center;padding:28px 20px;color:#44
 <div class="container" id="app">
   <div class="loading-msg"><div class="spinner"></div><br>Loading...</div>
 </div>
-<footer>Made by <a href="https://www.reddit.com/user/Gabrielense/" style="color:var(--accent3)">Gabrielense</a></footer>
+<div id="kofi-wrap" style="text-align:center;padding:16px 20px 0"></div>
+<script type="text/javascript" src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"></script>
+<script type="text/javascript">
+kofiwidget2.init('Support me on Ko-fi','#72a4f2','J3J21VUCOZ');
+kofiwidget2.draw();
+var kofiBtn=document.querySelector('.kofi-button');
+if(kofiBtn){document.getElementById('kofi-wrap').appendChild(kofiBtn);}
+</script>
+<footer>Made by <a href="https://www.reddit.com/user/Gabrielense/" style="color:var(--accent3)">Gabrielense</a><br>Last updated March 18th, 2026</footer>
 
 <script>
 const POKEMON_DATA = [
@@ -335,10 +343,10 @@ const POKEMON_DATA = [
   {n:25,id:"0025-00-00-86",name:"Pikachu Chapéu da Lyra",nameEn:"Lyra's hat Pikachu",estreia:"24/02/2026",brilhante:"24/02/2026",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
   {n:25,id:"0025-00-00-87",name:"Pikachu Camiseta de beisebol",nameEn:"Baseball jersey Pikachu",estreia:"03/04/2026",brilhante:"03/04/2026",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
   {n:25,id:"0025-00-01",name:"Pikachu Clone",nameEn:"Clone Pikachu",estreia:"25/02/2020",brilhante:"",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
-  {n:25,id:"0025-00-02-13",name:"Pikachu Cosplay Libre",nameEn:"Libre Cosplay Pikachu",estreia:"13/03/2020",brilhante:"30/11/2020",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
-  {n:25,id:"0025-00-02-27",name:"Pikachu Cosplay Popstar",nameEn:"Pop Star Cosplay Pikachu",estreia:"17/07/2021",brilhante:"16/11/2024",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
-  {n:25,id:"0025-00-02-28",name:"Pikachu Cosplay Rockstar",nameEn:"Rock Star Cosplay Pikachu",estreia:"17/07/2021",brilhante:"16/11/2024",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
-  {n:25,id:"0025-00-02-60",name:"Pikachu Cosplay Ph.D.",nameEn:"Ph.D. Cosplay Pikachu",estreia:"01/03/2024",brilhante:"",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
+  {n:25,id:"0025-00-02-01",name:"Pikachu Cosplay Libre",nameEn:"Libre Cosplay Pikachu",estreia:"13/03/2020",brilhante:"30/11/2020",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
+  {n:25,id:"0025-00-02-02",name:"Pikachu Cosplay Popstar",nameEn:"Pop Star Cosplay Pikachu",estreia:"17/07/2021",brilhante:"16/11/2024",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
+  {n:25,id:"0025-00-02-03",name:"Pikachu Cosplay Rockstar",nameEn:"Rock Star Cosplay Pikachu",estreia:"17/07/2021",brilhante:"16/11/2024",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
+  {n:25,id:"0025-00-02-04",name:"Pikachu Cosplay Ph.D.",nameEn:"Ph.D. Cosplay Pikachu",estreia:"01/03/2024",brilhante:"",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
   {n:25,id:"0025G",name:"Pikachu Gigamax",nameEn:"Gigantamax Pikachu",estreia:"28/03/2026",brilhante:"28/03/2026",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
   {n:26,id:"0026",name:"Raichu",nameEn:"Raichu",estreia:"06/07/2016",brilhante:"09/08/2017",sombroso:"",sombrosoBrilhante:"",dinamax:"09/03/2026",dinamaxBrilhante:"09/03/2026"},
   {n:26,id:"0026-00-00-01",name:"Raichu Gorro de Natal",nameEn:"Santa hat Raichu",estreia:"25/12/2016",brilhante:"18/12/2018",sombroso:"",sombrosoBrilhante:"",dinamax:"",dinamaxBrilhante:""},
@@ -1949,6 +1957,8 @@ function setLang(l){
   document.getElementById("tagline").textContent=T("tagline");
   document.getElementById("todayBtn").textContent=T("today");
   document.documentElement.lang=l==="pt"?"pt-BR":"en";
+  var kofiText=document.querySelector('.kofi-button .kofitext');
+  if(kofiText) kofiText.textContent=l==="pt"?"Me apoie no Ko-fi":"Support me on Ko-fi";
   showDate(currentDate.getDate(),currentDate.getMonth()+1);
 }
 
