@@ -98,8 +98,8 @@ header .tagline{font-size:1rem;color:var(--text-dim);font-weight:400;margin-top:
 .card .info .poke-text{font-size:0.9rem;color:#bbb;margin-top:2px;line-height:1.5}
 .card .sprites-row{display:flex;gap:2px;flex-shrink:0;align-items:center}
 .sprite-wrap{position:relative;flex-shrink:0;display:flex;align-items:center;justify-content:center}
-.sprite-wrap img.sprite{height:64px;width:auto;image-rendering:pixelated;
-  filter:drop-shadow(0 2px 6px rgba(0,0,0,0.4))}
+.sprite-wrap img.sprite{height:64px;width:auto;max-width:107px;object-fit:contain;
+  image-rendering:pixelated;filter:drop-shadow(0 2px 6px rgba(0,0,0,0.4))}
 .sprite-wrap .badge-icon{position:absolute;bottom:-2px;right:-4px;width:20px;height:20px;
   filter:drop-shadow(0 1px 2px rgba(0,0,0,0.6))}
 .status-tag{
@@ -131,7 +131,9 @@ header .tagline{font-size:1rem;color:var(--text-dim);font-weight:400;margin-top:
   flex-shrink:0;width:42px;height:42px;border-radius:50%;
   background:linear-gradient(135deg,var(--accent3),#6dd5fa);
   display:flex;align-items:center;justify-content:center;
-  font-size:0.75rem;color:var(--bg);font-weight:800;letter-spacing:-0.5px}
+  font-size:0.75rem;color:var(--bg);font-weight:800;letter-spacing:-0.5px;
+  overflow:hidden}
+.milestone-card .ms-icon img{width:28px;height:28px;object-fit:contain}
 .milestone-card .ms-info{flex:1}
 .milestone-card .ms-type{font-size:0.72rem;font-weight:700;color:var(--accent3);text-transform:uppercase;letter-spacing:0.5px}
 .milestone-card .ms-name{font-size:0.95rem;font-weight:600;color:#fff;margin-top:1px}
@@ -1900,11 +1902,14 @@ const EVENTS_DATA = [
 
 
 const SPRITE_BASE="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/sprites/";
+const REPO_BASE="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/";
+const CD_LOGO=REPO_BASE+"GO_Community_Day_Logo.png";
+const CD_CLASSIC_LOGO=REPO_BASE+"GO_Community_Day_Classic_logo.png";
 const SHADOW_ICON="https://cdn3.emoji.gg/emojis/2383-shadow-pokemon-go.png";
 const DINAMAX_ICON="https://tiermaker.com/images/templates/all-gigantamax-pokmon-15141343/151413431655072068.png";
 
 const STATUS_KEYS=[
-  {key:"estreia",    labelPT:"Estreia",            labelEN:"Debut",          shiny:false, badge:null,        tagClass:"tag-estreia"},
+  {key:"estreia",    labelPT:"Regular",            labelEN:"Default",        shiny:false, badge:null,        tagClass:"tag-estreia"},
   {key:"brilhante",  labelPT:"Brilhante",          labelEN:"Shiny",          shiny:true,  badge:null,        tagClass:"tag-brilhante"},
   {key:"sombroso",   labelPT:"Sombroso",            labelEN:"Shadow",         shiny:false, badge:SHADOW_ICON, tagClass:"tag-sombroso"},
   {key:"sombrosoBrilhante", labelPT:"Sombroso Brilhante", labelEN:"Shiny Shadow", shiny:true,  badge:SHADOW_ICON, tagClass:"tag-sombroso-brilhante"},
@@ -1923,8 +1928,9 @@ const i18n={
   today:{pt:"HOJE",en:"TODAY"},
   noTitle:{pt:"Nenhum lançamento neste dia!",en:"Nothing happened on this day!"},
   noText:{pt:d=>`Parece que ${d} não teve nenhum lançamento registrado no Pokémon GO.`,en:d=>`Looks like ${d} had no recorded launches in Pokémon GO.`},
-  launched:{pt:"foi lançado!",en:"was released!"},
-  milestones:{pt:"Neste dia na história do Pokémon GO",en:"This day in Pokémon GO history"},
+  launchedSingle:{pt:"foi lançado!",en:"was released!"},
+  launchedPlural:{pt:"foram lançados!",en:"were released!"},
+  milestones:{pt:"Neste dia na história do Pokémon GO",en:"This day on Pokémon GO history"},
   count:{pt:(n)=>n+" lançamento"+(n>1?"s":"")+" encontrado"+(n>1?"s":""),en:(n)=>n+" release"+(n>1?"s":"")+" found"},
   inYear:{pt:"Em",en:"In"},
   and:{pt:" e ",en:" and "}
@@ -2019,10 +2025,20 @@ function showDate(targetDay,targetMonth){
   if(dayMilestones.length>0){
     msHtml+=`<div class="milestones">
       <div class="milestones-header"><span class="ms-badge">${T("milestones")}</span></div>`;
+    const cdTypes=["Community Day","Community Day: Play at Home edition","Dia Comunitário","Dia Comunitário: edição jogue de casa"];
+    const cdcTypes=["Community Day Classic","Clássicos do Dia Comunitário"];
     for(const ms of dayMilestones){
       const yr=String(ms.year).slice(-2);
+      let iconInner;
+      if(cdTypes.includes(ms.type)){
+        iconInner=`<img src="${CD_LOGO}" alt="CD">`;
+      }else if(cdcTypes.includes(ms.type)){
+        iconInner=`<img src="${CD_CLASSIC_LOGO}" alt="CDC">`;
+      }else{
+        iconInner="'"+yr;
+      }
       msHtml+=`<div class="milestone-card">
-        <div class="ms-icon">'${yr}</div>
+        <div class="ms-icon">${iconInner}</div>
         <div class="ms-info">
           <div class="ms-type">${ms.type}</div>
           <div class="ms-name">${ms.name}</div>
@@ -2042,7 +2058,6 @@ function showDate(targetDay,targetMonth){
 
   let pokeHtml="";
   const inWord=T("inYear");
-  const launchedWord=T("launched");
   for(const[year,yearEvents]of byYear){
     pokeHtml+=`<div class="year-section">
       <div class="year-header"><span class="year-badge">${year}</span></div>`;
@@ -2055,6 +2070,7 @@ function showDate(targetDay,targetMonth){
 
     for(const[name,group]of byName){
       const dexNum=group[0].dexNum;
+      const launched=group.length>1?T("launchedPlural"):T("launchedSingle");
       // Sprites
       let spritesHtml="";
       for(const ev of group){
@@ -2072,8 +2088,8 @@ function showDate(targetDay,targetMonth){
       if(group.length===1){
         const ev=group[0];
         textHtml=ev.key==="estreia"
-          ?`${inWord} ${ev.year}, <strong>${name}</strong> ${launchedWord}`
-          :`${inWord} ${ev.year}, <strong>${name}</strong> <span class="status-tag ${ev.tagClass}">${ev.label}</span> ${launchedWord}`;
+          ?`${inWord} ${ev.year}, <strong>${name}</strong> ${launched}`
+          :`${inWord} ${ev.year}, <strong>${name}</strong> <span class="status-tag ${ev.tagClass}">${ev.label}</span> ${launched}`;
       }else{
         const tagSpans=group.map(ev=>`<span class="status-tag ${ev.tagClass}">${ev.label}</span>`);
         let tags;
@@ -2082,7 +2098,7 @@ function showDate(targetDay,targetMonth){
         }else{
           tags=tagSpans.slice(0,-1).join(", ")+andWord+tagSpans[tagSpans.length-1];
         }
-        textHtml=`${inWord} ${year}, <strong>${name}</strong> ${tags} ${launchedWord}`;
+        textHtml=`${inWord} ${year}, <strong>${name}</strong> ${tags} ${launched}`;
       }
 
       pokeHtml+=`<div class="card">
