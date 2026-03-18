@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokémon GO Rewind</title>
 <meta property="og:title" content="Pokémon GO Rewind">
-<meta property="og:description" content="Relive every launch, remember game milestones.">
+<meta property="og:description" content="Relive every launch, remember major milestones.">
 <meta property="og:image" content="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/preview.png">
 <meta property="og:url" content="https://pogorewind.vercel.app/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Pokémon GO Rewind">
-<meta name="twitter:description" content="Relive every launch, remember game milestones.">
+<meta name="twitter:description" content="Relive every launch, remember major milestones.">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/preview.png">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -183,7 +183,7 @@ footer{position:relative;z-index:1;text-align:center;padding:28px 20px;color:#44
     <button id="langEN" class="active" onclick="setLang('en')">EN</button>
   </div>
   <div class="logo">Pokémon GO Rewind</div>
-  <p class="tagline" id="tagline">Relive every launch, remember game milestones.</p>
+  <p class="tagline" id="tagline">Relive every launch, remember major milestones.</p>
   <div class="date-display" id="dateDisplay"></div>
   <div class="date-nav">
     <button class="nav-btn" id="prevDay" title="Previous day">&#9664;</button>
@@ -1940,7 +1940,7 @@ let lang="en";
 let currentDate=new Date();
 
 const i18n={
-  tagline:{pt:"Reviva cada lançamento, relembre marcos do jogo.",en:"Relive every launch, remember game milestones."},
+  tagline:{pt:"Reviva cada lançamento, relembre marcos do jogo.",en:"Relive every launch, remember major milestones."},
   today:{pt:"HOJE",en:"TODAY"},
   noTitle:{pt:"Nenhum lançamento neste dia!",en:"Nothing happened on this day!"},
   noText:{pt:d=>`Parece que ${d} não teve nenhum lançamento registrado no Pokémon GO.`,en:d=>`Looks like ${d} had no recorded launches in Pokémon GO.`},
