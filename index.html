@@ -212,19 +212,42 @@ async function loadCSVData(){
     fetch(base+"datas_debut.csv").then(r=>r.text()),
     fetch(base+"events.csv").then(r=>r.text())
   ]);
-  // Parse Pokemon CSV
-  const pokeLines=pokeText.split("\n").filter(l=>l.trim());
-  for(let i=1;i<pokeLines.length;i++){
-    const c=pokeLines[i].split(";");
-    if(c.length<10)continue;
-    POKEMON_DATA.push({n:parseInt(c[0],10),id:c[1],name:c[2],nameEn:c[3],estreia:c[4],brilhante:c[5],sombroso:c[6],sombrosoBrilhante:c[7],dinamax:c[8],dinamaxBrilhante:c[9].trim()});
+  // Parse Pokemon CSV// Parse Pokemon CSV
+  const pokeLines = pokeText.split("\n").filter(l => l.trim());
+  for (let i = 1; i < pokeLines.length; i++) {
+    // This regex handles commas while respecting quotes
+    const c = pokeLines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(item => item.replace(/^"|"$/g, '').trim());
+    
+    if (c.length < 10) continue;
+    POKEMON_DATA.push({
+      n: parseInt(c[0], 10),
+      id: c[1],
+      name: c[2],
+      nameEn: c[3],
+      estreia: c[4],
+      brilhante: c[5],
+      sombroso: c[6],
+      sombrosoBrilhante: c[7],
+      dinamax: c[8],
+      dinamaxBrilhante: c[9]
+    });
   }
+
   // Parse Events CSV
-  const evLines=eventsText.split("\n").filter(l=>l.trim());
-  for(let i=1;i<evLines.length;i++){
-    const c=evLines[i].split(";");
-    if(c.length<6)continue;
-    EVENTS_DATA.push({type:c[0],typeEn:c[1],name:c[2],nameEn:c[3],date:c[4],img:c[5].trim()});
+  const evLines = eventsText.split("\n").filter(l => l.trim());
+  for (let i = 1; i < evLines.length; i++) {
+    // Same regex split for the events file
+    const c = evLines[i].split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(item => item.replace(/^"|"$/g, '').trim());
+    
+    if (c.length < 6) continue;
+    EVENTS_DATA.push({
+      type: c[0],
+      typeEn: c[1],
+      name: c[2],
+      nameEn: c[3],
+      date: c[4],
+      img: c[5]
+    });
   }
   // Auto-update "Last updated" from GitHub API
   try{
