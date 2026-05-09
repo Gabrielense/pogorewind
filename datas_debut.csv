@@ -745,7 +745,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 376,0376M,Mega Metagross,Mega Metagross,04/10/2025,04/10/2025,,,,
 377,0377,Regirock,Regirock,16/08/2018,01/11/2019,21/06/2023,01/02/2025,20/04/2026,20/04/2026
 378,0378,Regice,Regice,21/06/2018,01/11/2019,25/03/2023,07/12/2024,23/03/2026,23/03/2026
-379,0379,Registeel,Registeel,19/07/2018,01/11/2019,01/02/2023,04/01/2025,04/05/2026,04/05/2026
+379,0379,Registeel,Registeel,19/07/2018,01/11/2019,01/02/2023,04/01/2025,18/05/2026,18/05/2026
 380,0380,Latias,Latias,02/04/2018,22/02/2019,03/04/2022,02/10/2025,26/07/2025,26/07/2025
 380,0380M,Mega Latias,Mega Latias,03/05/2022,03/05/2022,,,,
 381,0381,Latios,Latios,02/04/2018,15/04/2019,09/07/2022,02/11/2025,26/07/2025,26/07/2025
@@ -801,8 +801,8 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 413,0413-00-02,Wormadam Manto Arenoso,Sandy Cloak Wormadam,17/05/2019,05/12/2019,,,,
 413,0413-00-03,Wormadam Manto de Lixo,Trash Cloak Wormadam,17/05/2019,05/12/2019,,,,
 414,0414,Mothim,Mothim,17/05/2019,05/12/2019,,,,
-415,0415,Combee,Combee,31/01/2019,22/07/2022,,,04/05/2026,04/05/2026
-416,0416,Vespiquen,Vespiquen,31/01/2019,22/07/2022,,,04/05/2026,04/05/2026
+415,0415,Combee,Combee,31/01/2019,22/07/2022,,,25/05/2026,25/05/2026
+416,0416,Vespiquen,Vespiquen,31/01/2019,22/07/2022,,,25/05/2026,25/05/2026
 417,0417,Pachirisu,Pachirisu,16/10/2018,17/02/2024,,,,
 418,0418,Buizel,Buizel,06/11/2018,12/01/2021,,,,
 419,0419,Floatzel,Floatzel,06/11/2018,12/01/2021,,,,
