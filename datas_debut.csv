@@ -172,6 +172,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 25,0025-00-00-099,Pikachu PokéXciting! Vermelho,Red PokéXciting! Pikachu,23/01/2027,23/01/2027,,,,
 25,0025-00-00-100,Pikachu Hanbok laranja,Orange hanbok Pikachu,18/09/2026,18/09/2026,,,,
 25,0025-00-00-101,Pikachu Astronauta,Astronaut Pikachu,04/10/2026,04/10/2026,,,,
+25,0025-00-00-102,Pikachu Chapéu e capinha,Hat and capelet Pikachu,27/10/2026,27/10/2026,,,,
 26,0026,Raichu,Raichu,06/07/2016,09/08/2017,,,09/03/2026,09/03/2026
 26,0026-00-00-01,Raichu Gorro de Natal,Santa hat Raichu,25/12/2016,18/12/2018,,,,
 26,0026-00-00-02,Raichu Chapéu de festa,Party hat Raichu,26/02/2017,26/02/2018,,,,
@@ -216,7 +217,9 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 40,0040,Wigglytuff,Wigglytuff,06/07/2016,16/04/2019,,,,
 40,0040-00-00-01,Wigglytuff Laço,Ribbon Wigglytuff,01/01/2024,01/01/2024,,,,
 41,0041,Zubat,Zubat,06/07/2016,25/07/2019,22/07/2019,27/01/2024,,
+41,0041-00-00-01,Zubat Cartola,Top hat Zubat,27/10/2026,27/10/2026,,,,
 42,0042,Golbat,Golbat,06/07/2016,25/07/2019,22/07/2019,27/01/2024,,
+42,0042-00-00-01,Golbat Cartola,Top hat Golbat,27/10/2026,27/10/2026,,,,
 43,0043,Oddish,Oddish,06/07/2016,02/10/2019,05/09/2019,03/03/2026,,
 44,0044,Gloom,Gloom,06/07/2016,02/10/2019,05/09/2019,03/03/2026,,
 45,0045,Vileplume,Vileplume,06/07/2016,02/10/2019,05/09/2019,03/03/2026,,
@@ -445,6 +448,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 167,0167,Spinarak,Spinarak,16/02/2017,15/10/2021,,,,
 168,0168,Ariados,Ariados,16/02/2017,15/10/2021,,,,
 169,0169,Crobat,Crobat,16/02/2017,25/07/2019,22/07/2019,27/01/2024,,
+169,0169-00-00-01,Crobat Cartola,Top hat Crobat,27/10/2026,27/10/2026,,,,
 170,0170,Chinchou,Chinchou,16/02/2017,17/04/2020,,,,
 171,0171,Lanturn,Lanturn,16/02/2017,17/04/2020,,,,
 172,0172,Pichu,Pichu,12/12/2016,09/08/2017,,,,
@@ -1438,9 +1442,13 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 852,0852,Clobbopus,Clobbopus,13/12/2025,,,,,
 853,0853,Grapploct,Grapploct,13/12/2025,,,,,
 854,0854-00-01,Sinistea Autêntica,Antique Sinistea,03/12/2024,21/10/2025,,,,
+854,0854-00-01-01,Sinistea Autêntica Laço,Bow Antique Sinistea,27/10/2026,27/10/2026,,,,
 854,0854-00-02,Sinistea Falsificada,Phony Sinistea,03/12/2024,21/10/2025,,,,
+854,0854-00-02-01,Sinistea Falsificada Laço,Bow Phony Sinistea,27/10/2026,27/10/2026,,,,
 855,0855-00-01,Polteageist Autêntica,Antique Polteageist,03/12/2024,21/10/2025,,,,
+855,0855-00-01-01,Polteageist Autêntica Laço,Bow Antique Polteageist,27/10/2026,27/10/2026,,,,
 855,0855-00-02,Polteageist Falsificada,Phony Polteageist,03/12/2024,21/10/2025,,,,
+855,0855-00-02-01,Polteageist Falsificada Laço,Bow Phony Polteageist,27/10/2026,27/10/2026,,,,
 856,0856,Hatenna,Hatenna,18/09/2024,07/11/2025,,,16/06/2025,07/11/2025
 857,0857,Hattrem,Hattrem,18/09/2024,07/11/2025,,,16/06/2025,07/11/2025
 858,0858,Hatterene,Hatterene,18/09/2024,07/11/2025,,,16/06/2025,07/11/2025
