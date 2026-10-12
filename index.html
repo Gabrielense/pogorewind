@@ -322,6 +322,39 @@ function spriteUrl(id,shiny){
   return SPRITE_BASE+encodeURIComponent(id)+(shiny?"%2BS":"")+".png";
 }
 
+/* Some sprites sit small in a canvas full of transparent margin. Measure the
+   drawn area once (40x40 shared canvas), cache the scale per file, and zoom in. */
+const SCALE_KEY="pogorewind.spriteScale.v1";
+let spriteScales={};
+try{spriteScales=JSON.parse(localStorage.getItem(SCALE_KEY)||"{}")}catch(e){}
+let scaleCanvas=null,scaleSaveTimer=null;
+function measureSprite(img){
+  try{
+    const N=40;
+    if(!scaleCanvas){scaleCanvas=document.createElement("canvas");scaleCanvas.width=scaleCanvas.height=N}
+    const c=scaleCanvas.getContext("2d",{willReadFrequently:true});
+    c.clearRect(0,0,N,N);c.drawImage(img,0,0,N,N);
+    const d=c.getImageData(0,0,N,N).data;
+    let x0=N,y0=N,x1=-1,y1=-1;
+    for(let y=0;y<N;y++)for(let x=0;x<N;x++)if(d[(y*N+x)*4+3]>10){
+      if(x<x0)x0=x;if(x>x1)x1=x;if(y<y0)y0=y;if(y>y1)y1=y;
+    }
+    if(x1<0)return 1;
+    const frac=Math.max(x1-x0+1,y1-y0+1)/N;
+    return frac>=0.72?1:Math.min(1.8,Math.round(0.8/frac*100)/100);
+  }catch(e){return 1}
+}
+function fitSprite(img){
+  const key=img.src.slice(SPRITE_BASE.length);
+  let s=spriteScales[key];
+  if(s===undefined){
+    s=spriteScales[key]=measureSprite(img);
+    clearTimeout(scaleSaveTimer);
+    scaleSaveTimer=setTimeout(()=>{try{localStorage.setItem(SCALE_KEY,JSON.stringify(spriteScales))}catch(e){}},800);
+  }
+  if(s>1)img.style.transform="scale("+s+")";
+}
+
 function stLabel(st){return lang==="pt"?st.labelPT:st.labelEN}
 function pokeName(p){return lang==="pt"?p.name:p.nameEn}
 function months(){return lang==="pt"?MONTHS_PT:MONTHS_EN}
@@ -432,7 +465,7 @@ function showDate(targetDay,targetMonth){
         const src=spriteUrl(ev.id,ev.shiny);
         const badgeHtml=ev.badge?`<img class="badge-icon" src="${ev.badge}" alt="${ev.label}">`:"";
         spritesHtml+=`<div class="sprite-wrap">
-          <img class="sprite" src="${src}" alt="${name}" loading="lazy" onerror="this.style.display='none'">
+          <img class="sprite" src="${src}" alt="${name}" loading="lazy" crossorigin="anonymous" onload="fitSprite(this)" onerror="this.style.display='none'">
           ${badgeHtml}
         </div>`;
       }
