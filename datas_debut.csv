@@ -1084,6 +1084,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 607,0607,Litwick,Litwick,16/09/2019,15/10/2022,26/10/2023,03/03/2026,,
 608,0608,Lampent,Lampent,16/09/2019,15/10/2022,26/10/2023,03/03/2026,,
 609,0609,Chandelure,Chandelure,16/09/2019,15/10/2022,26/10/2023,03/03/2026,,
+609,0609M,Mega Chandelure,Mega Chandelure,31/10/2026,31/10/2026,,,,
 610,0610,Axew,Axew,10/01/2020,04/06/2022,25/06/2026,25/06/2026,,
 611,0611,Fraxure,Fraxure,10/01/2020,04/06/2022,25/06/2026,25/06/2026,,
 612,0612,Haxorus,Haxorus,10/01/2020,04/06/2022,25/06/2026,25/06/2026,,
@@ -1119,7 +1120,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 638,0638,Cobalion,Cobalion,04/11/2019,17/03/2020,,,,
 639,0639,Terrakion,Terrakion,26/11/2019,19/05/2020,,,,
 640,0640,Virizion,Virizion,17/12/2019,12/05/2020,,,,
-641,0641-00-01,Tornadus Materializada,Incarnate Forme Tornadus,04/02/2020,06/03/2021,16/09/2025,,,
+641,0641-00-01,Tornadus Materializada,Incarnate Forme Tornadus,04/02/2020,06/03/2021,16/09/2025,04/11/2026,,
 641,0641-00-02,Tornadus Therian,Therian Forme Tornadus,30/03/2021,15/03/2022,,,,
 642,0642-00-01,Thundurus Materializada,Incarnate Forme Thundurus,02/03/2020,11/03/2021,23/01/2026,03/03/2026,,
 642,0642-00-02,Thundurus Therian,Therian Forme Thundurus,16/03/2021,05/04/2022,,,,
@@ -1209,8 +1210,8 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 676,0676-00-07,Furfrou Faraônico,Pharaoh Furfrou,21/09/2021,27/09/2022,,,,
 676,0676-00-08,Furfrou Kabuki,Kabuki Furfrou,21/09/2021,27/09/2022,,,,
 676,0676-00-09,Furfrou Coração,Heart Furfrou,10/02/2022,08/02/2022,,,,
-677,0677,Espurr,Espurr,30/11/2020,01/02/2022,,,,
-678,0678,Meowstic,Meowstic,30/11/2020,01/02/2022,,,,
+677,0677,Espurr,Espurr,30/11/2020,01/02/2022,,,23/11/2026,23/11/2026
+678,0678,Meowstic,Meowstic,30/11/2020,01/02/2022,,,23/11/2026,23/11/2026
 679,0679,Honedge,Honedge,22/07/2025,20/02/2026,,,,
 680,0680,Doublade,Doublade,22/07/2025,20/02/2026,,,,
 681,0681-00-01,Aegislash Escudo,Shield Forme Aegislash,22/07/2025,20/02/2026,,,,
@@ -1388,8 +1389,8 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 805,0805,Stakataka,Stakataka,23/05/2024,09/04/2025,,,,
 806,0806,Blacephalon,Blacephalon,23/05/2024,09/04/2025,,,,
 807,0807,Zeraora,Zeraora,29/05/2026,,,,,
-808,0808,Meltan,Meltan,14/11/2018,05/02/2019,,,,
-809,0809,Melmetal,Melmetal,14/11/2018,05/02/2019,,,,
+808,0808,Meltan,Meltan,14/11/2018,05/02/2019,,,09/11/2026,09/11/2026
+809,0809,Melmetal,Melmetal,14/11/2018,05/02/2019,,,09/11/2026,09/11/2026
 810,0810,Grookey,Grookey,03/09/2024,18/01/2026,,,01/10/2024,18/01/2026
 811,0811,Thwackey,Thwackey,03/09/2024,18/01/2026,,,01/10/2024,18/01/2026
 812,0812,Rillaboom,Rillaboom,03/09/2024,18/01/2026,,,01/10/2024,18/01/2026
@@ -1486,7 +1487,7 @@ Número,ID,Nome,Name,Estreia,Brilhante,Sombroso,Sombroso Brilhante,Dinamax,Dinam
 892,0892-00-02,Urshifu Golpe decisivo,Single Strike Urshifu,21/05/2025,,,,21/05/2025,
 893,0893,Zarude,Zarude,01/10/2021,,,,,
 894,0894,Regieleki,Regieleki,09/04/2023,27/11/2024,,,,
-895,0895,Regidrago,Regidrago,11/03/2023,27/11/2024,,,,
+895,0895,Regidrago,Regidrago,11/03/2023,27/11/2024,,,12/11/2026,12/11/2026
 899,0899,Wyrdeer,Wyrdeer,23/12/2023,23/12/2023,,,,
 900,0900,Kleavor,Kleavor,06/05/2023,06/05/2023,,,,
 901,0901,Ursaluna,Ursaluna,12/11/2022,12/11/2022,12/11/2022,12/11/2022,,
