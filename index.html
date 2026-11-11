@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pokémon GO Rewind</title>
+<meta name="description" content="Every Pokémon GO release on any day of the year: debuts, shinies, shadows, Dynamax, Community Days and game milestones.">
 <meta property="og:title" content="Pokémon GO Rewind">
 <meta property="og:description" content="Relive every launch, remember game milestones.">
 <meta property="og:image" content="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/preview.png">
@@ -64,6 +65,21 @@ header .tagline{font-size:1rem;color:var(--text-dim);font-weight:400;margin-top:
 .date-input input[type="date"]::-webkit-calendar-picker-indicator{
   filter:invert(0.7) sepia(1) saturate(3) hue-rotate(10deg);cursor:pointer}
 .event-count{text-align:center;margin-top:6px;font-size:0.85rem;color:var(--text-dim)}
+
+/* Upcoming releases strip (dates already announced in the CSV) */
+.upcoming{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:4px 20px 0}
+.upcoming-title{font-size:0.72rem;font-weight:700;letter-spacing:0.6px;text-transform:uppercase;color:var(--accent3);margin-bottom:6px}
+.upcoming-row{display:flex;gap:8px;overflow-x:auto;padding-bottom:6px;scrollbar-width:thin}
+.up-chip{flex-shrink:0;display:flex;align-items:center;gap:6px;background:var(--surface);border:1px solid var(--border);
+  border-radius:12px;padding:5px 10px 5px 8px;cursor:pointer;color:var(--text);font-family:inherit;font-size:0.8rem;text-align:left;
+  transition:background .2s,transform .15s}
+.up-chip:hover{background:var(--surface-hover);transform:translateY(-1px)}
+.up-chip .up-date{font-weight:800;color:var(--accent);white-space:nowrap}
+.up-chip .up-sprites{display:flex;align-items:center}
+.up-chip .up-sprites img{width:30px;height:30px;object-fit:contain;margin-right:-6px}
+.up-chip .up-more{font-size:0.72rem;color:var(--text-dim);margin-left:10px}
+.up-chip .up-name{color:#ccc;max-width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ev-src{color:var(--text-dim);font-size:0.82rem;margin-left:4px}
 
 /* Lang toggle */
 .lang-toggle{
@@ -193,6 +209,10 @@ footer{position:relative;z-index:1;text-align:center;padding:28px 20px;color:#44
   </div>
   <div class="event-count" id="eventCount"></div>
 </header>
+<div class="upcoming" id="upcoming" hidden>
+  <div class="upcoming-title" id="upcomingTitle"></div>
+  <div class="upcoming-row" id="upcomingRow"></div>
+</div>
 <div class="container" id="app">
   <div class="loading-msg"><div class="spinner"></div><br>Loading...</div>
 </div>
@@ -204,14 +224,22 @@ footer{position:relative;z-index:1;text-align:center;padding:28px 20px;color:#44
 <script>
 let POKEMON_DATA = [];
 let EVENTS_DATA = [];
+const RELEASE_EVENTS = {}; // "id|column" -> event name the date came from (release_events.csv, optional)
 const DATA_LOADED = loadCSVData();
 
 async function loadCSVData(){
   const base="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/";
-  const [pokeText, eventsText] = await Promise.all([
+  const [pokeText, eventsText, relText] = await Promise.all([
     fetch(base+"datas_debut.csv").then(r=>r.text()),
-    fetch(base+"events.csv").then(r=>r.text())
+    fetch(base+"events.csv").then(r=>r.text()),
+    fetch(base+"release_events.csv").then(r=>r.ok?r.text():"").catch(()=>"")
   ]);
+  // Parse release events (ID,Column,Date,Event) - the event name may contain commas, so split on the first three only
+  for (const line of relText.split("\n").slice(1)) {
+    const parts = line.trim().split(",");
+    if (parts.length < 4) continue;
+    RELEASE_EVENTS[parts[0] + "|" + parts[1]] = parts.slice(3).join(",").trim();
+  }
   // Parse Pokemon CSV// Parse Pokemon CSV
   const pokeLines = pokeText.split("\n").filter(l => l.trim());
   for (let i = 1; i < pokeLines.length; i++) {
@@ -265,16 +293,18 @@ async function loadCSVData(){
 
 const SPRITE_BASE="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/sprites/";
 const REPO_BASE="https://raw.githubusercontent.com/Gabrielense/pogorewind/main/";
-const SHADOW_ICON="https://cdn3.emoji.gg/emojis/2383-shadow-pokemon-go.png";
-const DINAMAX_ICON="https://tiermaker.com/images/templates/all-gigantamax-pokmon-15141343/151413431655072068.png";
+// Badge icons live in this repo (they used to be hot-linked from emoji.gg and tiermaker.com)
+const SHADOW_ICON="badge_shadow.png";
+const DINAMAX_ICON="badge_dynamax.png";
 
+// key = CSV field, col = column header in datas_debut.csv (used to look up release_events.csv)
 const STATUS_KEYS=[
-  {key:"estreia",    labelPT:"Regular",            labelEN:"Default",        shiny:false, badge:null,        tagClass:"tag-estreia"},
-  {key:"brilhante",  labelPT:"Brilhante",          labelEN:"Shiny",          shiny:true,  badge:null,        tagClass:"tag-brilhante"},
-  {key:"sombroso",   labelPT:"Sombroso",            labelEN:"Shadow",         shiny:false, badge:SHADOW_ICON, tagClass:"tag-sombroso"},
-  {key:"sombrosoBrilhante", labelPT:"Sombroso Brilhante", labelEN:"Shiny Shadow", shiny:true,  badge:SHADOW_ICON, tagClass:"tag-sombroso-brilhante"},
-  {key:"dinamax",    labelPT:"Dinamax",             labelEN:"Dynamax",        shiny:false, badge:DINAMAX_ICON,tagClass:"tag-dinamax"},
-  {key:"dinamaxBrilhante",  labelPT:"Dinamax Brilhante",  labelEN:"Shiny Dynamax",shiny:true,  badge:DINAMAX_ICON,tagClass:"tag-dinamax-brilhante"}
+  {key:"estreia",    col:"Estreia",            labelPT:"Regular",            labelEN:"Default",        shiny:false, badge:null,        tagClass:"tag-estreia"},
+  {key:"brilhante",  col:"Brilhante",          labelPT:"Brilhante",          labelEN:"Shiny",          shiny:true,  badge:null,        tagClass:"tag-brilhante"},
+  {key:"sombroso",   col:"Sombroso",           labelPT:"Sombroso",            labelEN:"Shadow",         shiny:false, badge:SHADOW_ICON, tagClass:"tag-sombroso"},
+  {key:"sombrosoBrilhante", col:"Sombroso Brilhante", labelPT:"Sombroso Brilhante", labelEN:"Shiny Shadow", shiny:true,  badge:SHADOW_ICON, tagClass:"tag-sombroso-brilhante"},
+  {key:"dinamax",    col:"Dinamax",            labelPT:"Dinamax",             labelEN:"Dynamax",        shiny:false, badge:DINAMAX_ICON,tagClass:"tag-dinamax"},
+  {key:"dinamaxBrilhante",  col:"Dinamax Brilhante",  labelPT:"Dinamax Brilhante",  labelEN:"Shiny Dynamax",shiny:true,  badge:DINAMAX_ICON,tagClass:"tag-dinamax-brilhante"}
 ];
 
 const MONTHS_PT=["janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro"];
@@ -295,7 +325,9 @@ const i18n={
   milestones:{pt:"Neste dia na história do Pokémon GO",en:"This day on Pokémon GO history"},
   count:{pt:(n)=>n+" lançamento"+(n>1?"s":"")+" encontrado"+(n>1?"s":""),en:(n)=>n+" release"+(n>1?"s":"")+" found"},
   inYear:{pt:"Em",en:"In"},
-  and:{pt:" e ",en:" and "}
+  and:{pt:" e ",en:" and "},
+  upcoming:{pt:"Próximos lançamentos",en:"Coming up"},
+  more:{pt:n=>"+"+n,en:n=>"+"+n}
 };
 
 function T(key){return typeof i18n[key][lang]==="function"?i18n[key][lang]:i18n[key][lang]}
@@ -308,8 +340,80 @@ function setLang(l){
   document.getElementById("tagline").textContent=T("tagline");
   document.getElementById("todayBtn").textContent=T("today");
   document.documentElement.lang=l==="pt"?"pt-BR":"en";
+  renderUpcoming();
   showDate(currentDate.getDate(),currentDate.getMonth()+1);
 }
+
+/* ── Permalink: #dd-mm (the page shows a day across every year) ── */
+function dateFromHash(){
+  const m=/^#(\d{1,2})-(\d{1,2})$/.exec(location.hash);
+  if(!m)return null;
+  const d=+m[1],mo=+m[2];
+  if(mo<1||mo>12||d<1||d>31)return null;
+  return {day:d,month:mo};
+}
+function syncHash(day,month){
+  const h="#"+String(day).padStart(2,"0")+"-"+String(month).padStart(2,"0");
+  if(location.hash!==h)history.replaceState(null,"",h);
+}
+window.addEventListener("hashchange",()=>{
+  const h=dateFromHash();
+  if(!h)return;
+  if(h.day===currentDate.getDate()&&h.month===currentDate.getMonth()+1)return;
+  currentDate=new Date(currentDate.getFullYear(),h.month-1,h.day);
+  showDate(currentDate.getDate(),currentDate.getMonth()+1);
+});
+
+/* ── Upcoming: every announced date after today, from the same CSVs ── */
+function toDate(d){return new Date(d.year,d.month-1,d.day)}
+function renderUpcoming(){
+  const box=document.getElementById("upcoming");
+  const today=new Date();today.setHours(0,0,0,0);
+  const byDay=new Map(); // "yyyy-mm-dd" -> {date, items:[{name,id,shiny,label}], events:[name]}
+  const bucket=d=>{
+    const k=`${d.year}-${d.month}-${d.day}`;
+    if(!byDay.has(k))byDay.set(k,{date:toDate(d),items:[],events:[]});
+    return byDay.get(k);
+  };
+  for(const poke of POKEMON_DATA){
+    for(const st of STATUS_KEYS){
+      const d=parseDate(poke[st.key]);
+      if(d&&toDate(d)>today)bucket(d).items.push({name:pokeName(poke),id:poke.id,shiny:st.shiny,label:stLabel(st)});
+    }
+  }
+  for(const ev of EVENTS_DATA){
+    const d=parseDate(ev.date);
+    if(d&&toDate(d)>today)bucket(d).events.push(lang==="pt"?ev.name:ev.nameEn);
+  }
+  const days=[...byDay.values()].sort((a,b)=>a.date-b.date).slice(0,8);
+  if(!days.length){box.hidden=true;return;}
+  box.hidden=false;
+  document.getElementById("upcomingTitle").textContent=T("upcoming");
+  const row=document.getElementById("upcomingRow");
+  row.innerHTML="";
+  for(const d of days){
+    const chip=document.createElement("button");
+    chip.className="up-chip";
+    chip.type="button";
+    const dd=String(d.date.getDate()).padStart(2,"0"),mm=String(d.date.getMonth()+1).padStart(2,"0");
+    const label=lang==="pt"?`${dd}/${mm}`:`${mm}/${dd}`;
+    // one entry per Pokémon: shiny + regular on the same day show one sprite
+    const seen=new Set(),uniq=[];
+    for(const it of d.items){if(!seen.has(it.id)){seen.add(it.id);uniq.push(it)}}
+    const sprites=uniq.slice(0,4).map(it=>`<img src="${spriteUrl(it.id,false)}" alt="${escapeHtml(it.name)}" loading="lazy" onerror="this.style.display='none'">`).join("");
+    const extra=uniq.length>4?`<span class="up-more">${T("more")(uniq.length-4)}</span>`:"";
+    const name=uniq.length===1?`<span class="up-name">${escapeHtml(uniq[0].name)}</span>`:(uniq.length===0&&d.events.length?`<span class="up-name">${escapeHtml(d.events[0])}</span>`:"");
+    chip.innerHTML=`<span class="up-date">${label}</span><span class="up-sprites">${sprites}</span>${extra}${name}`;
+    chip.title=[...uniq.map(it=>it.name+" · "+it.label),...d.events].join("\n");
+    chip.addEventListener("click",()=>{
+      currentDate=new Date(d.date);
+      showDate(currentDate.getDate(),currentDate.getMonth()+1);
+      window.scrollTo({top:0,behavior:"smooth"});
+    });
+    row.appendChild(chip);
+  }
+}
+function escapeHtml(s){return String(s).replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]))}
 
 function parseDate(str){
   if(!str)return null;
@@ -367,6 +471,7 @@ function showDate(targetDay,targetMonth){
   const picker=document.getElementById("datePicker");
   const yy=currentDate.getFullYear();
   picker.value=`${yy}-${String(targetMonth).padStart(2,"0")}-${String(targetDay).padStart(2,"0")}`;
+  syncHash(targetDay,targetMonth);
 
   // ── Collect pokemon release events ──
   const rawEvents=[];
@@ -377,7 +482,8 @@ function showDate(targetDay,targetMonth){
         rawEvents.push({
           name:pokeName(poke), id:poke.id, dexNum:poke.n,
           year:d.year, label:stLabel(st), key:st.key,
-          shiny:st.shiny, badge:st.badge, tagClass:st.tagClass
+          shiny:st.shiny, badge:st.badge, tagClass:st.tagClass,
+          source:RELEASE_EVENTS[poke.id+"|"+st.col]||""
         });
       }
     }
@@ -400,7 +506,9 @@ function showDate(targetDay,targetMonth){
 
   const app=document.getElementById("app");
   const countEl=document.getElementById("eventCount");
-  const totalCount=rawEvents.length+dayMilestones.length;
+  // one card per Pokémon per year (regular + shiny on the same day is one release), plus milestones
+  const cardCount=new Set(rawEvents.map(e=>e.year+"|"+e.name)).size;
+  const totalCount=cardCount+dayMilestones.length;
 
   if(totalCount===0){
     countEl.textContent="";
@@ -488,6 +596,9 @@ function showDate(targetDay,targetMonth){
         }
         textHtml=`${inWord} ${year}, <strong>${name}</strong> ${tags} ${launched}`;
       }
+      // the event the date came from (release_events.csv), when known
+      const sources=[...new Set(group.map(ev=>ev.source).filter(Boolean))];
+      if(sources.length)textHtml+=` <span class="ev-src">· ${escapeHtml(sources.join(" · "))}</span>`;
 
       pokeHtml+=`<div class="card">
         <div class="dex-num">#${dexNum}</div>
@@ -528,11 +639,14 @@ document.addEventListener("keydown",function(e){
   if(e.key==="ArrowRight"){changeDay(1);e.preventDefault()}
 });
 
-// Init — wait for CSV data, then detect browser language
+// Init — wait for CSV data, then detect browser language; a #dd-mm link opens that day
 DATA_LOADED.then(()=>{
+  const h=dateFromHash();
+  if(h)currentDate=new Date(currentDate.getFullYear(),h.month-1,h.day);
   if((navigator.language||navigator.userLanguage||"").startsWith("pt")){
     setLang("pt");
   }else{
+    renderUpcoming();
     showDate(currentDate.getDate(),currentDate.getMonth()+1);
   }
 }).catch(err=>{

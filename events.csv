@@ -1,15 +1,22 @@
 Tipo de evento,Event type,Nome,Name,Data,ImageName
+GO Fest,GO Fest,GO Fest 2017,GO Fest 2017,22/07/2017,Pokémon_GO_logo
 Dia Comunitário,Community Day,Pikachu,Pikachu,20/01/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Dratini,Dratini,24/02/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Bulbasaur,Bulbasaur,25/03/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Mareep,Mareep,15/04/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Charmander,Charmander,19/05/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Larvitar,Larvitar,16/06/2018,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Articuno,Articuno,07/07/2018,Raid_Emblem
 Dia Comunitário,Community Day,Squirtle,Squirtle,08/07/2018,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2018,GO Fest 2018,14/07/2018,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2018,GO Fest 2018,15/07/2018,Pokémon_GO_logo
+Dia de Reides,Raid Day,Zapdos,Zapdos,21/07/2018,Raid_Emblem
 Dia Comunitário,Community Day,Eevee,Eevee,11/08/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Eevee,Eevee,12/08/2018,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Moltres,Moltres,08/09/2018,Raid_Emblem
 Dia Comunitário,Community Day,Chikorita,Chikorita,22/09/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Beldum,Beldum,21/10/2018,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Gengar,Gengar,03/11/2018,Raid_Emblem
 Dia Comunitário,Community Day,Cyndaquil,Cyndaquil,10/11/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2018,2018 Celebration,30/11/2018,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2018,2018 Celebration,01/12/2018,GO_Community_Day_Logo
@@ -19,34 +26,63 @@ Dia Comunitário,Community Day,Swinub,Swinub,16/02/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Treecko,Treecko,23/03/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Bagon,Bagon,13/04/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Torchic,Torchic,19/05/2019,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Lapras,Lapras,25/05/2019,Raid_Emblem
 Dia Comunitário,Community Day,Slakoth,Slakoth,08/06/2019,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2019 Chicago,GO Fest 2019 Chicago,13/06/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Chicago,GO Fest 2019 Chicago,14/06/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Chicago,GO Fest 2019 Chicago,15/06/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Chicago,GO Fest 2019 Chicago,16/06/2019,Pokémon_GO_logo
+Dia de Reides,Raid Day,Raikou,Raikou,29/06/2019,Raid_Emblem
+GO Fest,GO Fest,GO Fest 2019 Dortmund,GO Fest 2019 Dortmund,04/07/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Dortmund,GO Fest 2019 Dortmund,05/07/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Dortmund,GO Fest 2019 Dortmund,06/07/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Dortmund,GO Fest 2019 Dortmund,07/07/2019,Pokémon_GO_logo
+Dia de Reides,Raid Day,Entei,Entei,14/07/2019,Raid_Emblem
 Dia Comunitário,Community Day,Mudkip,Mudkip,21/07/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Ralts,Ralts,03/08/2019,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,06/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,07/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,08/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,09/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,10/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,11/08/2019,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2019 Yokohama,GO Fest 2019 Yokohama,12/08/2019,Pokémon_GO_logo
+Dia de Reides,Raid Day,Suicune,Suicune,17/08/2019,Raid_Emblem
 Dia Comunitário,Community Day,Turtwig,Turtwig,15/09/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Trapinch,Trapinch,12/10/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Chimchar,Chimchar,16/11/2019,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Evolution Event,Evolution Event,07/12/2019,Raid_Emblem
 Dia Comunitário,Community Day,Celebração de 2019,2019 Celebration,14/12/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2019,2019 Celebration,15/12/2019,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Piplup,Piplup,19/01/2020,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Lickitung,Lickitung,15/02/2020,Raid_Emblem
 Dia Comunitário,Community Day,Rhyhorn,Rhyhorn,22/02/2020,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Nidorino e Gengar,Nidorino and Gengar,01/03/2020,Raid_Emblem
 Dia Comunitário,Community Day,Abra,Abra,25/04/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Seedot,Seedot,24/05/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Weedle,Weedle,20/06/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Gastly,Gastly,19/07/2020,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2020,GO Fest 2020,25/07/2020,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2020,GO Fest 2020,26/07/2020,Pokémon_GO_logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Magikarp,Magikarp,08/08/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Porygon,Porygon,20/09/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Charmander,Charmander,17/10/2020,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Marowak de Alola,Alolan Marowak,31/10/2020,Raid_Emblem
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Electabuzz,Electabuzz,15/11/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Magmar,Magmar,21/11/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Celebração de 2020,2020 Celebration,12/12/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Celebração de 2020,2020 Celebration,13/12/2020,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Machop,Machop,16/01/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Roselia,Roselia,07/02/2021,GO_Community_Day_Logo
+GO Tour,GO Tour,GO Tour: Kanto,GO Tour: Kanto,20/02/2021,Pokémon_GO_logo
+Dia de Reides,Raid Day,Articuno · Zapdos · Moltres,Articuno · Zapdos · Moltres,28/02/2021,Raid_Emblem
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Fletchling,Fletchling,06/03/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Snivy,Snivy,11/04/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Swablu,Swablu,15/05/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Gible,Gible,06/06/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Tepig,Tepig,03/07/2021,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2021,GO Fest 2021,17/07/2021,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2021,GO Fest 2021,18/07/2021,Pokémon_GO_logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Eevee,Eevee,14/08/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Eevee,Eevee,15/08/2021,GO_Community_Day_Logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Oshawott,Oshawott,19/09/2021,GO_Community_Day_Logo
@@ -57,85 +93,250 @@ Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Cel
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Spheal,Spheal,16/01/2022,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Bulbasaur,Bulbasaur,22/01/2022,GO_Community_Day_Classic_logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Hoppip,Hoppip,12/02/2022,GO_Community_Day_Logo
+GO Tour,GO Tour,GO Tour: Johto,GO Tour: Johto,26/02/2022,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Live,GO Tour: Live,27/02/2022,Pokémon_GO_logo
 Dia Comunitário: edição jogue de casa,Community Day: Play at Home edition,Sandshrew e Sandshrew de Alola,Sandshrew and Alolan Sandshrew,13/03/2022,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Mudkip,Mudkip,10/04/2022,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Stufful,Stufful,23/04/2022,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Kangaskhan,Mega Kangaskhan,01/05/2022,Raid_Emblem
 Dia Comunitário,Community Day,Geodude de Alola,Alolan Geodude,21/05/2022,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2022,GO Fest 2022,04/06/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022,GO Fest 2022,05/06/2022,Pokémon_GO_logo
 Dia Comunitário,Community Day,Deino,Deino,25/06/2022,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2022 Berlin,GO Fest 2022 Berlin,01/07/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Berlin,GO Fest 2022 Berlin,02/07/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Berlin,GO Fest 2022 Berlin,03/07/2022,Pokémon_GO_logo
 Dia Comunitário,Community Day,Starly,Starly,17/07/2022,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2022 Seattle,GO Fest 2022 Seattle,22/07/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Seattle,GO Fest 2022 Seattle,23/07/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Seattle,GO Fest 2022 Seattle,24/07/2022,Pokémon_GO_logo
+Dia de Reides,Raid Day,Braviary de Hisui,Hisuian Braviary,31/07/2022,Raid_Emblem
+GO Fest,GO Fest,GO Fest 2022 Sapporo,GO Fest 2022 Sapporo,05/08/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Sapporo,GO Fest 2022 Sapporo,06/08/2022,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2022 Sapporo,GO Fest 2022 Sapporo,07/08/2022,Pokémon_GO_logo
 Dia Comunitário,Community Day,Zigzagoon de Galar,Galarian Zigzagoon,13/08/2022,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2022 Finale,GO Fest 2022 Finale,27/08/2022,Pokémon_GO_logo
+Dia de Reides,Raid Day,Deoxys · Attack Deoxys · Defense Deoxys · Speed Deoxys,Deoxys · Attack Deoxys · Defense Deoxys · Speed Deoxys,11/09/2022,Raid_Emblem
 Dia Comunitário,Community Day,Roggenrola,Roggenrola,18/09/2022,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Gyarados,Mega Gyarados,08/10/2022,Raid_Emblem
 Dia Comunitário,Community Day,Litwick,Litwick,15/10/2022,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Dratini,Dratini,05/11/2022,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Teddiursa,Teddiursa,12/11/2022,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Astral Eclipse,Astral Eclipse,27/11/2022,Raid_Emblem
+Dia de Reides,Raid Day,Mega Sceptile · Mega Blaziken · Mega Swampert,Mega Sceptile · Mega Blaziken · Mega Swampert,03/12/2022,Raid_Emblem
 Dia Comunitário,Community Day,Celebração de 2022,2022 Celebration,17/12/2022,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2022,2022 Celebration,18/12/2022,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Avalugg de Hisui,Hisuian Avalugg,24/12/2022,Raid_Emblem
 Dia Comunitário,Community Day,Chespin,Chespin,07/01/2023,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Larvitar,Larvitar,21/01/2023,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Noibat,Noibat,05/02/2023,GO_Community_Day_Logo
+GO Tour,GO Tour,GO Tour: Hoenn - Las Vegas,GO Tour: Hoenn - Las Vegas,18/02/2023,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Hoenn - Las Vegas,GO Tour: Hoenn - Las Vegas,19/02/2023,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Hoenn - Global,GO Tour: Hoenn - Global,25/02/2023,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Hoenn - Global,GO Tour: Hoenn - Global,26/02/2023,Pokémon_GO_logo
 Dia Comunitário,Community Day,Slowpoke,Slowpoke,18/03/2023,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Togetic,Togetic,15/04/2023,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Swinub,Swinub,29/04/2023,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Kleavor,Kleavor,06/05/2023,Raid_Emblem
 Dia Comunitário,Community Day,Frennekin,Frennekin,21/05/2023,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Axew,Axew,10/06/2023,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Squirtle,Squirtle,09/07/2023,GO_Community_Day_Classic_logo
+Dia de Chocar Ovos,Hatch Day,Riolu,Riolu,22/07/2023,Egg_5km
 Dia Comunitário,Community Day,Poliwag,Poliwag,30/07/2023,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2023: London,GO Fest 2023: London,04/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: Osaka,GO Fest 2023: Osaka,04/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: London,GO Fest 2023: London,05/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: Osaka,GO Fest 2023: Osaka,05/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: London,GO Fest 2023: London,06/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: Osaka,GO Fest 2023: Osaka,06/08/2023,Pokémon_GO_logo
 Dia Comunitário,Community Day,Froakie,Froakie,13/08/2023,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2023: New York City,GO Fest 2023: New York City,18/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: New York City,GO Fest 2023: New York City,19/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: New York City,GO Fest 2023: New York City,20/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: Global,GO Fest 2023: Global,26/08/2023,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2023: Global,GO Fest 2023: Global,27/08/2023,Pokémon_GO_logo
 Clássicos do Dia Comunitário,Community Day Classic,Charmander,Charmander,02/09/2023,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Grubbin,Grubbin,23/09/2023,GO_Community_Day_Logo
+Dia de Chocar Ovos,Hatch Day,Azurill,Azurill,30/09/2023,Egg_5km
 Dia Comunitário,Community Day,Timburr,Timburr,15/10/2023,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Wooper e Wooper de Paldea,Wooper and Paldean Wooper,05/11/2023,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Garchomp,Mega Garchomp,11/11/2023,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Mareep,Mareep,25/11/2023,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Samurott de Hisui,Hisuian Samurott,03/12/2023,Raid_Emblem
 Dia Comunitário,Community Day,Celebração de 2023,2023 Celebration,16/12/2023,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2023,2023 Celebration,17/12/2023,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Wyrdeer,Wyrdeer,23/12/2023,Raid_Emblem
 Dia Comunitário,Community Day,Rowlet,Rowlet,06/01/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Typhlosion de Hisui,Hisuian Typhlosion,14/01/2024,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Porygon,Porygon,20/01/2024,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Chansey,Chansey,04/02/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Decidueye de Hisui,Hisuian Decidueye,11/02/2024,Raid_Emblem
+GO Tour,GO Tour,GO Tour: Sinnoh - Los Angeles,GO Tour: Sinnoh - Los Angeles,17/02/2024,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Sinnoh - Los Angeles,GO Tour: Sinnoh - Los Angeles,18/02/2024,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Sinnoh - Global,GO Tour: Sinnoh - Global,24/02/2024,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Sinnoh - Global,GO Tour: Sinnoh - Global,25/02/2024,Pokémon_GO_logo
 Dia Comunitário,Community Day,Litten,Litten,16/03/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Primal Kyogre,Primal Kyogre,17/03/2024,Raid_Emblem
+Dia de Reides,Raid Day,Primal Groudon,Primal Groudon,23/03/2024,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Bagon,Bagon,07/04/2024,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Mega Heracross,Mega Heracross,13/04/2024,Raid_Emblem
 Dia Comunitário,Community Day,Bellsprout,Bellsprout,20/04/2024,GO_Community_Day_Logo
+Dia de Chocar Ovos,Hatch Day,Cleffa,Cleffa,28/04/2024,Egg_5km
 Dia Comunitário,Community Day,Bounsweet,Bounsweet,19/05/2024,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2024: Sendai,GO Fest 2024: Sendai,30/05/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Sendai,GO Fest 2024: Sendai,31/05/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Sendai,GO Fest 2024: Sendai,01/06/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Sendai,GO Fest 2024: Sendai,02/06/2024,Pokémon_GO_logo
 Dia Comunitário,Community Day,Goomy,Goomy,09/06/2024,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2024: Madrid,GO Fest 2024: Madrid,14/06/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Madrid,GO Fest 2024: Madrid,15/06/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Madrid,GO Fest 2024: Madrid,16/06/2024,Pokémon_GO_logo
 Clássicos do Dia Comunitário,Community Day Classic,Cyndaquil,Cyndaquil,22/06/2024,GO_Community_Day_Classic_logo
+GO Fest,GO Fest,GO Fest 2024: New York City,GO Fest 2024: New York City,05/07/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: New York City,GO Fest 2024: New York City,06/07/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: New York City,GO Fest 2024: New York City,07/07/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Global,GO Fest 2024: Global,13/07/2024,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2024: Global,GO Fest 2024: Global,14/07/2024,Pokémon_GO_logo
 Dia Comunitário,Community Day,Tynamo,Tynamo,21/07/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Lucario,Mega Lucario,27/07/2024,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Beldum,Beldum,18/08/2024,GO_Community_Day_Classic_logo
 Dia Comunitário,Community Day,Popplio,Popplio,31/08/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Falinks,Falinks,08/09/2024,Raid_Emblem
 Dia Comunitário,Community Day,Ponyta e Ponyta de Galar,Ponyta and Galarian Ponyta,14/09/2024,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Sewaddle,Sewaddle,05/10/2024,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Mawile,Mega Mawile,12/10/2024,Raid_Emblem
 Dia Comunitário,Community Day,Mankey,Mankey,10/11/2024,GO_Community_Day_Logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Lapras,Gigantamax Lapras,08/12/2024,badge_dynamax
+Dia de Reides,Raid Day,Dusk Mane Necrozma e Dawn Wings Necrozma,Dusk Mane Necrozma and Dawn Wings Necrozma,14/12/2024,Raid_Emblem
 Dia Comunitário,Community Day,Celebração de 2024,2024 Celebration,21/12/2024,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2024,2024 Celebration,22/12/2024,GO_Community_Day_Logo
+Dia de Chocar Ovos,Hatch Day,Charged Embers,Charged Embers,29/12/2024,Egg_5km
 Dia Comunitário,Community Day,Sprigatito,Sprigatito,05/01/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Gallade,Mega Gallade,11/01/2025,Raid_Emblem
+Dia de Reides,Raid Day,Ho-Oh Sombroso,Shadow Ho-Oh,19/01/2025,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Ralts,Ralts,25/01/2025,GO_Community_Day_Classic_logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Kingler,Gigantamax Kingler,01/02/2025,badge_dynamax
 Dia Comunitário,Community Day,Shelmet e Karrablast,Shelmet and Karrablast,09/02/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Hoopa Unbound,Hoopa Unbound,15/02/2025,Raid_Emblem
+GO Tour,GO Tour,GO Tour: Unova - Los Angeles,GO Tour: Unova - Los Angeles,21/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - New Taipei City,GO Tour: Unova - New Taipei City,21/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - Los Angeles,GO Tour: Unova - Los Angeles,22/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - New Taipei City,GO Tour: Unova - New Taipei City,22/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - Los Angeles,GO Tour: Unova - Los Angeles,23/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - New Taipei City,GO Tour: Unova - New Taipei City,23/02/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - Global,GO Tour: Unova - Global,01/03/2025,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Unova - Global,GO Tour: Unova - Global,02/03/2025,Pokémon_GO_logo
 Dia Comunitário,Community Day,Fuecoco,Fuecoco,08/03/2025,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Totodile,Totodile,22/03/2025,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Mega Absol,Mega Absol,23/03/2025,Raid_Emblem
+Dia de Reides,Raid Day,Mega Audino,Mega Audino,05/04/2025,Raid_Emblem
+Dia de Chocar Ovos,Hatch Day,Tyrogue,Tyrogue,06/04/2025,Egg_5km
+Dia de Reides,Raid Day,Mega Heracross · Hariyama · Scraggy,Mega Heracross · Hariyama · Scraggy,13/04/2025,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Snorlax,Gigantamax Snorlax,19/04/2025,badge_dynamax
 Dia Comunitário,Community Day,Vanillite,Vanillite,27/04/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Kangaskhan,Mega Kangaskhan,03/05/2025,Raid_Emblem
 Dia Comunitário,Community Day,Pawmi,Pawmi,11/05/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Regigigas Sombroso,Shadow Regigigas,17/05/2025,Raid_Emblem
 Clássicos do Dia Comunitário,Community Day Classic,Machop,Machop,24/05/2025,GO_Community_Day_Classic_logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Machamp,Gigantamax Machamp,25/05/2025,badge_dynamax
+GO Fest,GO Fest,GO Fest 2025: Osaka,GO Fest 2025: Osaka,29/05/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Osaka,GO Fest 2025: Osaka,30/05/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Osaka,GO Fest 2025: Osaka,31/05/2025,Pokémon_GO_logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Rillaboom,Gigantamax Rillaboom,01/06/2025,badge_dynamax
+GO Fest,GO Fest,GO Fest 2025: Osaka,GO Fest 2025: Osaka,01/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Jersey City,GO Fest 2025: Jersey City,06/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Jersey City,GO Fest 2025: Jersey City,07/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Jersey City,GO Fest 2025: Jersey City,08/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Paris,GO Fest 2025: Paris,13/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Paris,GO Fest 2025: Paris,14/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Paris,GO Fest 2025: Paris,15/06/2025,Pokémon_GO_logo
 Dia Comunitário,Community Day,Jangmo-o,Jangmo-o,21/06/2025,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2025: Global,GO Fest 2025: Global,28/06/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Global,GO Fest 2025: Global,29/06/2025,Pokémon_GO_logo
 Clássicos do Dia Comunitário,Community Day Classic,Eevee,Eevee,05/07/2025,GO_Community_Day_Classic_logo
 Clássicos do Dia Comunitário,Community Day Classic,Eevee,Eevee,06/07/2025,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Lilligant de Hisui,Hisuian Lilligant,12/07/2025,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Lapras,Gigantamax Lapras,19/07/2025,badge_dynamax
 Dia Comunitário,Community Day,Quaxly,Quaxly,20/07/2025,GO_Community_Day_Logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Butterfree,Gigantamax Butterfree,03/08/2025,badge_dynamax
+Dia de Chocar Ovos,Hatch Day,Munchlax,Munchlax,09/08/2025,Egg_5km
+Dia de Reides,Raid Day,Origin Forme Dialga e Origin Forme Palkia,Origin Forme Dialga and Origin Forme Palkia,10/08/2025,Raid_Emblem
+GO Fest,GO Fest,GO Fest 2025: Max Finale,GO Fest 2025: Max Finale,23/08/2025,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2025: Max Finale,GO Fest 2025: Max Finale,24/08/2025,Pokémon_GO_logo
 Dia Comunitário,Community Day,Rookidee,Rookidee,30/08/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Gyarados,Mega Gyarados,31/08/2025,Raid_Emblem
+Dia de Reides,Raid Day,Mega Sharpedo,Mega Sharpedo,07/09/2025,Raid_Emblem
 Dia Comunitário,Community Day,Flabébé,Flabébé,14/09/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Camerupt,Mega Camerupt,28/09/2025,Raid_Emblem
+Dia de Reides,Raid Day,Mega Metagross,Mega Metagross,04/10/2025,Raid_Emblem
 Dia Comunitário,Community Day,Solosis,Solosis,12/10/2025,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Rayquaza,Mega Rayquaza,18/10/2025,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Garbodor,Gigantamax Garbodor,01/11/2025,badge_dynamax
 Dia Comunitário,Community Day,Pikipek,Pikipek,30/11/2025,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2025,2025 Celebration,06/12/2025,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2025,2025 Celebration,07/12/2025,GO_Community_Day_Logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Snorlax,Gigantamax Snorlax,14/12/2025,badge_dynamax
 Clássicos do Dia Comunitário,Community Day Classic,Piplup,Piplup,04/01/2026,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Reshiram · Zekrom · White Kyurem · Black Kyurem,Reshiram · Zekrom · White Kyurem · Black Kyurem,10/01/2026,Raid_Emblem
 Dia Comunitário,Community Day,Grookey,Grookey,18/01/2026,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Raikou Sombroso,Shadow Raikou,24/01/2026,Raid_Emblem
 Dia Comunitário,Community Day,Vulpix e Vulpix de Alola,Vulpix and Alolan Vulpix,01/02/2026,GO_Community_Day_Logo
+Dia de Batalhas Max,Max Battle Day,Ho-Oh Dinamax,Dynamax Ho-Oh,01/02/2026,badge_dynamax
+Dia de Reides,Raid Day,Luvdisc · Furfrou · Therian Forme Enamorus,Luvdisc · Furfrou · Therian Forme Enamorus,14/02/2026,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Meowth,Gigantamax Meowth,15/02/2026,badge_dynamax
+GO Tour,GO Tour,GO Tour: Kalos - Los Angeles,GO Tour: Kalos - Los Angeles,20/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Tainan,GO Tour: Kalos - Tainan,20/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Los Angeles,GO Tour: Kalos - Los Angeles,21/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Tainan,GO Tour: Kalos - Tainan,21/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Los Angeles,GO Tour: Kalos - Los Angeles,22/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Tainan,GO Tour: Kalos - Tainan,22/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Global,GO Tour: Kalos - Global,28/02/2026,Pokémon_GO_logo
+GO Tour,GO Tour,GO Tour: Kalos - Global,GO Tour: Kalos - Global,01/03/2026,Pokémon_GO_logo
 Dia Comunitário,Community Day,Scorbunny,Scorbunny,14/03/2026,GO_Community_Day_Logo
+Dia de Batalhas Max,Max Battle Day,Gigantamax Pikachu,Gigantamax Pikachu,28/03/2026,badge_dynamax
+Dia de Reides,Raid Day,Fashion,Fashion,04/04/2026,Raid_Emblem
 Dia Comunitário,Community Day,Tinkatink,Tinkatink,11/04/2026,GO_Community_Day_Logo
+Dia de Chocar Ovos,Hatch Day,Replay: Riolu,Replay: Riolu,18/04/2026,Egg_5km
+Dia de Batalhas Max,Max Battle Day,Gigantamax Venusaur · Gigantamax Charizard · Gigantamax Blastoise · Gigantamax Gengar,Gigantamax Venusaur · Gigantamax Charizard · Gigantamax Blastoise · Gigantamax Gengar,25/04/2026,badge_dynamax
+Dia de Reides,Raid Day,Entei Sombroso,Shadow Entei,02/05/2026,Raid_Emblem
 Dia Comunitário,Community Day,Lechonk,Lechonk,09/05/2026,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Deino,Deino,16/05/2026,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Mega Falinks,Mega Falinks,23/05/2026,Raid_Emblem
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,25/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,26/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,27/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,28/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,29/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,30/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,31/05/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Tokyo,GO Fest 2026: Tokyo,01/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Chicago,GO Fest 2026: Chicago,05/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Chicago,GO Fest 2026: Chicago,06/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Chicago,GO Fest 2026: Chicago,07/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Copenhagen,GO Fest 2026: Copenhagen,12/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Copenhagen,GO Fest 2026: Copenhagen,13/06/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Copenhagen,GO Fest 2026: Copenhagen,14/06/2026,Pokémon_GO_logo
 Dia Comunitário,Community Day,Frigibax,Frigibax,20/06/2026,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Skarmory,Mega Skarmory,27/06/2026,Raid_Emblem
 Dia Comunitário,Community Day,Sobble,Sobble,04/07/2026,GO_Community_Day_Logo
+GO Fest,GO Fest,GO Fest 2026: Global,GO Fest 2026: Global,11/07/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Global,GO Fest 2026: Global,12/07/2026,Pokémon_GO_logo
+Dia de Reides,Raid Day,Mega Raichu X e Mega Raichu Y,Mega Raichu X and Mega Raichu Y,18/07/2026,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Rillaboom,Gigantamax Rillaboom,01/08/2026,badge_dynamax
+Dia de Chocar Ovos,Hatch Day,Fire e Ice,Fire and Ice,08/08/2026,Egg_5km
 Dia Comunitário,Community Day,Nickit,Nickit,16/08/2026,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Starmie,Mega Starmie,22/08/2026,Raid_Emblem
+GO Fest,GO Fest,GO Fest 2026: Mega Finale,GO Fest 2026: Mega Finale,05/09/2026,Pokémon_GO_logo
+GO Fest,GO Fest,GO Fest 2026: Mega Finale,GO Fest 2026: Mega Finale,06/09/2026,Pokémon_GO_logo
 Clássicos do Dia Comunitário,Community Day Classic,Gible,Gible,12/09/2026,GO_Community_Day_Classic_logo
+Dia de Reides,Raid Day,Mega Staraptor,Mega Staraptor,19/09/2026,Raid_Emblem
+Dia de Batalhas Max,Max Battle Day,Gigantamax Cinderace,Gigantamax Cinderace,03/10/2026,badge_dynamax
 Dia Comunitário,Community Day,Zorua,Zorua,10/10/2026,GO_Community_Day_Logo
+Dia de Chocar Ovos,Hatch Day,Sandile,Sandile,17/10/2026,Egg_5km
+Dia de Batalhas Max,Max Battle Day,Uxie Dinamax · Mesprit Dinamax · Azelf Dinamax,Dynamax Uxie · Dynamax Mesprit · Dynamax Azelf,24/10/2026,badge_dynamax
+Dia de Reides,Raid Day,Mega Chandelure,Mega Chandelure,31/10/2026,Raid_Emblem
 Dia Comunitário,Community Day,Pawniard,Pawniard,21/11/2026,GO_Community_Day_Logo
+Dia de Reides,Raid Day,Mega Clefable,Mega Clefable,28/11/2026,Raid_Emblem
 Dia Comunitário,Community Day,Celebração de 2026,2026 Celebration,12/12/2026,GO_Community_Day_Logo
 Dia Comunitário,Community Day,Celebração de 2026,2026 Celebration,13/12/2026,GO_Community_Day_Logo
 Clássicos do Dia Comunitário,Community Day Classic,Treecko,Treecko,02/01/2027,GO_Community_Day_Classic_logo

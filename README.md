@@ -9,7 +9,8 @@ A single-page website that shows every Pokémon released on any given day in Pok
 ## Features
 
 - Browse releases by day — see every Pokémon that debuted, went shiny, shadow, or Dynamax on any calendar date
-- Game milestones timeline — Community Days, raids, GO Fest, and more
+- Events on this day — Community Days, Raid Days, Max Battle Days, Hatch Days, GO Fest, GO Tour and game milestones
+- "Coming up" strip with every announced future date, and a permalink per day (`#dd-mm`)
 - Date navigation — arrow keys, calendar picker, and today button
 - Pokémon sprites served directly from this repo
 - The site loads its data at runtime from two CSV files in this repo.
@@ -46,6 +47,12 @@ Each row is a game event or milestone. Columns (semicolon-delimited):
 | Data | Event date (DD/MM/YYYY) |
 | ImageName | Image filename in the repo root (without `.png`) |
 
+### `release_events.csv`
+
+Optional: which event a release date came from, shown on the card ("· Halloween 2026").
+Columns: `ID`, `Column` (a date column header of `datas_debut.csv`), `Date`, `Event`.
+Only rows added since November 2026 are filled; older releases simply show no event.
+
 ### Sprites
 
 Sprites are stored in the `sprites/` folder, named by their ID:
@@ -55,7 +62,8 @@ Sprites are stored in the `sprites/` folder, named by their ID:
 
 ### Event images
 
-Event/milestone images go in the repo root as `.png` files. The `ImageName` column in `events.csv` should match the filename without the extension (e.g. `GO_Community_Day_Logo` → `GO_Community_Day_Logo.png`).
+Event/milestone images go in the repo root as `.png` files (`badge_shadow.png` and `badge_dynamax.png`
+are also the shadow/Dynamax badges drawn on sprites; `Egg_5km.png` is the Hatch Day image). The `ImageName` column in `events.csv` should match the filename without the extension (e.g. `GO_Community_Day_Logo` → `GO_Community_Day_Logo.png`).
 
 ## Hosted on
 
